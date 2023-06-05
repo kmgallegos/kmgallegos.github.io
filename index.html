@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>TE AYUDO</title>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a href="#inicio" class="nav_items">Inicio</a>
+                <i class="fa-solid fa-house"></i>
+                <a href="#nosotros" class="nav_items">Nosotros</a>
+                <i class="fa-solid fa-user"></i>
+                <a href="#Servicios" class="nav_items">Servicio</a>
+                <i class="fa-solid fa-server"></i>
+                <a href="#contactanosP" class="nav_items">Contactanos</a>
+                <i class="fa-sharp fa-solid fa-headset"></i>
+                
+            </nav>
+            <section id="inicio" class="header__conteiner">
+                <div class="header__text">
+                    <h1 class="text__teayudo">Te Ayudo!</h1>
+                </div>
+                <div class="header__img">
+                    <figure class="header__picture header__picture--right">
+                        <img src="imgPrin.jpg" alt="Imagen principal de la parte 1">
+                        
+                    </figure>
+                </div>
+            </section>
+        </div>
+        <div class="header__wave"  overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+    </header>
+
+    <main>
+      
+        <section id="nosotros" class="nosotros">
+          <div class="container">
+              <h1 class="subtitle">Nosotros</h1>
+              <div class="contenedor-participantes">
+                  <div>
+                      <img class="nosotros-img" src="erick.jpg" alt="erick">
+                  </div>
+                  <div>
+                      <img class="nosotros-img" src="oscar.jpg" alt="oscar">
+                  </div>
+                  <div>
+                      <img class="nosotros-img" src="ernesto.jpg" alt="ernesto">
+                  </div>
+                  <div>
+                      <img class="nosotros-img" src="kim.jpg" alt="kimberly">
+                  </div>
+                 
+              </div>
+              <div class="centered-paragraph">
+                  <p class="nosotros__descrip">Somos una Startup que inicia este año 2023, tenemos como objetivo brindar servicios de calidad en los rubros de alquileres de servidores, registro de hosts y desarrollo web, teniendo como público objetivo a pequeñas empresas que deseen dar el salto a la virtualidad con sus negocios.</p>
+              </div>
+              <div class="botonContactanos">
+                <button href="#contactanosP" id="contactanos-btn" class="link1"> contactanos
+                </button>
+                  
+              </div>
+              
+          </div>
+          
+      </section>
+
+          <section id="nuestraAPP" class="nuestraAPP">
+            <div class="container">
+              <h1 class="subtitle">Nuestra APP</h1>
+              <figure class="nuestraAPP__picture">
+                <img class="logo-img" src="nuestrap1.png" alt="imagen del apartado de nuestraAPP">
+              </figure>
+              <div class="centered-paragraph">
+                <p class="nuestraAPP__descrip">Nuestra app es una versión remota de nuestra web, con todas las funcionalidades de la misma pero añadiéndole la portabilidad, desde nuestra app tendrás acceso a los paneles de control de todos tus servicios contratados y poder así gestionarlos desde donde te encuentres.</p>
+                <div   class="descargaloya"><button id="descargar-btn" class="nuestraAPP__descarga">Descárgalo ya</h2>
+                  
+                </div>
+                <div class="iconos">
+
+                  <a id="apple" href="#" class="fa-brands fa-app-store-ios fa-2xl"></a>
+                  <a id="android" href="#" class="fa-solid fa-play fa-2xl"></a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="Servicios" class="Servicios">
+            <div class="container">
+              <h1 class="subtitle">Servicios</h1>
+              <div class="contenedor-imagenes">
+                <div class="imagen-contenedor">
+                  <img src="serviciop1.jpg" alt="Imagen 1">
+                  <a id="serv1" href="#" class="texto-adicional">Servidores Virtuales</a>
+                </div>
+                <div class="imagen-contenedor">
+                  <img src="serviciop2.jpg" alt="Imagen 2">
+                  <a id="serv2" href="#" class="texto-adicional">Registro de Dominio</a>
+                </div>
+                <div class="imagen-contenedor">
+                  <img src="serviciop3.jpg" alt="Imagen 3">
+                  <a id="serv3" href="#" class="texto-adicional">Desarrollo Web</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <section id="contactanosP" class="contactanosP">
+          <h1 class="subtitle">Contactanos</h1>
+            <div class="contact__form">
+                <div class="formulario">
+                    
+                    <form action="submeter-formulario.php" method="post">
+                        <p>
+                            <label for="nombre" class="colocar_nombre">Nombre y apellido <span class="obligatorio">*</span></label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre y apellido">
+                        </p>
+                        <p>
+                            <label for="email" class="colocar_email">Correo Electronico <span class="obligatorio">*</span></label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu correo electrónico">
+                        </p>
+                        <p>
+                            <label for="mensaje" class="colocar_mensaje">Menciona los servicios que deseas adquirir<span class="obligatorio">*</span></label>
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                        </p>
+                        <button class="btnen" type="submit" name="enviar_form" id="enviar">ENVIAR</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/b183909a75.js" crossorigin="anonymous"></script>
+</body>
+</html>
