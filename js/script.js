@@ -92,3 +92,19 @@ androidBtn.addEventListener('click', function() {
   // Redireccionar a la página web deseada
   window.open('https://play.google.com/store/games', '_blank'); // Reemplaza con la URL deseada
 });
+
+ const usuario = document.getElementById('user');
+
+  // Agregar evento de clic al botón
+  usuario.addEventListener('click', function() {
+    // Redireccionar a la página web deseada
+    window.open('https://kmgallegos.github.io/usuario.html', '_blank'); // Reemplaza con la URL deseada
+  });
+
+ const videos = document.getElementById('ytvid');
+
+  // Agregar evento de clic al botón
+  videos.addEventListener('click', function() {
+    // Redireccionar a la página web deseada
+    window.open('https://kmgallegos.github.io/About.html', '_blank'); // Reemplaza con la URL deseada
+  });
