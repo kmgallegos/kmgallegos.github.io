@@ -1,28 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Obtener todas las etiquetas de navegación
-    const navItems = document.querySelectorAll(".nav_items");
-  
-    // Agregar un controlador de eventos a cada etiqueta de navegación
-    navItems.forEach(function(navItem) {
-      navItem.addEventListener("click", function(event) {
-        event.preventDefault();
-  
-        // Obtener el atributo href del enlace
-        const target = this.getAttribute("href");
-  
-        // Obtener la posición del elemento de destino
-        const targetPosition = document.querySelector(target).offsetTop;
-  
-        // Desplazarse suavemente a la posición de destino
-        window.scrollTo({
-          top: targetPosition,
-          behavior: "smooth"
 
-          
-        });
-      });
-    });
-  });
   // Obtener referencia al botón
 const descargarBtn = document.getElementById('descargar-btn');
 
@@ -73,11 +49,7 @@ contactanosBtn.addEventListener('click', function() {
 
   const enviarBtn = document.getElementById('enviar');
 
-// Agregar evento de clic al botón
-enviarBtn.addEventListener('click', function() {
-  // Redireccionar a la página web deseada
-  window.open('https://www.google.com', '_blank'); // Reemplaza con la URL deseada
-});
+
 const appleBtn = document.getElementById('apple');
 
 // Agregar evento de clic al botón
@@ -93,18 +65,10 @@ androidBtn.addEventListener('click', function() {
   window.open('https://play.google.com/store/games', '_blank'); // Reemplaza con la URL deseada
 });
 
- const usuario = document.getElementById('user');
 
-  // Agregar evento de clic al botón
-  usuario.addEventListener('click', function() {
-    // Redireccionar a la página web deseada
-    window.open('https://kmgallegos.github.io/usuario.html', '_blank'); // Reemplaza con la URL deseada
-  });
-
- const videos = document.getElementById('ytvid');
-
-  // Agregar evento de clic al botón
-  videos.addEventListener('click', function() {
-    // Redireccionar a la página web deseada
-    window.open('https://kmgallegos.github.io/About.html', '_blank'); // Reemplaza con la URL deseada
-  });
+window.onscroll=function(){
+  console.log(document.documentElement.scrollTop);
+  if(document.documentElement.scrollTop>100){
+    document.querySelector('.go-top-container').classList.add('show');
+  }else{document.querySelector('.go-top-container').classList.remove('show');}
+}
